@@ -1,8 +1,7 @@
 from flask import Flask, url_for, request, jsonify
 from markupsafe import escape
 app = Flask(__name__)
-studentList = [{'id': 0, 'fio': 'aaa', 'course': 1, 'spec': 'dsds', 'number': '15454'},
-               {'id': 1, 'fio': 'aaa', 'course': 1, 'spec': 'dsds', 'number': '15454'}]
+studentList = []
 
 @app.route('/', methods=['GET'])
 def index():
@@ -12,15 +11,15 @@ def index():
 def src(filename=None):
     return app.send_static_file('src/%s' % escape(filename))
 
-@app.route('/student-list', methods=['GET'])
+@app.route('/students', methods=['GET'])
 def get_list():
     return jsonify(studentList)
 
 @app.route('/last-id', methods=['GET'])
 def get_id():
-    return str(studentList[len(studentList) - 1]["id"] + 1) if len(studentList) > 0 else '0'
+    return str(int(studentList[len(studentList) - 1]["id"]) + 1) if len(studentList) > 0 else '0'
 
-@app.route('/add-student', methods=['PUT'])
+@app.route('/students', methods=['PUT'])
 def add_student():
     obj = request.get_json()
     if 'id' in obj and 'fio' in obj and 'course' in obj and 'spec' in obj and 'number' in obj:
@@ -28,13 +27,13 @@ def add_student():
         return '',201
     return '', 400
 
-@app.route('/edit-student', methods=['POST'])
+@app.route('/students', methods=['POST'])
 def edit_student():
     obj = request.get_json()
     if 'id' in obj and 'fio' in obj and 'course' in obj and 'spec' in obj and 'number' in obj:
         i = 0
         while i < len(studentList):
-            if studentList[i]['id'] == int(obj['id']):
+            if studentList[i]['id'] == obj['id']:
                 break
             i+=1
 
@@ -48,7 +47,7 @@ def edit_student():
             return '', 400
 
 
-@app.route('/delete-student', methods=['DELETE'])
+@app.route('/students', methods=['DELETE'])
 def delete_student():
     obj = request.get_json()
     i = 0
