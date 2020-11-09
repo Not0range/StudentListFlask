@@ -7,9 +7,9 @@ studentList = []
 def index():
     return app.send_static_file('index.html')
 
-@app.route('/src/<filename>', methods=['GET'])
+@app.route('/<filename>', methods=['GET'])
 def src(filename=None):
-    return app.send_static_file('src/%s' % escape(filename))
+    return app.send_static_file(filename)
 
 @app.route('/students', methods=['GET'])
 def get_list():
