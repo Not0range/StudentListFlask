@@ -1,0 +1,85 @@
+[2020-12-16T14:28:16.313+0000][1][gc] Using G1
+[2020-12-16T14:28:16.321+0000][1][gc,init] Version: 15.0.1+9 (release)
+[2020-12-16T14:28:16.322+0000][1][gc,init] CPUs: 2 total, 2 available
+[2020-12-16T14:28:16.325+0000][1][gc,init] Memory: 1961M
+[2020-12-16T14:28:16.326+0000][1][gc,init] Large Page Support: Disabled
+[2020-12-16T14:28:16.328+0000][1][gc,init] NUMA Support: Disabled
+[2020-12-16T14:28:16.328+0000][1][gc,init] Compressed Oops: Enabled (32-bit)
+[2020-12-16T14:28:16.329+0000][1][gc,init] Heap Region Size: 1M
+[2020-12-16T14:28:16.331+0000][1][gc,init] Heap Min Capacity: 512M
+[2020-12-16T14:28:16.332+0000][1][gc,init] Heap Initial Capacity: 512M
+[2020-12-16T14:28:16.333+0000][1][gc,init] Heap Max Capacity: 512M
+[2020-12-16T14:28:16.334+0000][1][gc,init] Pre-touch: Disabled
+[2020-12-16T14:28:16.336+0000][1][gc,init] Parallel Workers: 2
+[2020-12-16T14:28:16.337+0000][1][gc,init] Concurrent Workers: 1
+[2020-12-16T14:28:16.338+0000][1][gc,init] Concurrent Refinement Workers: 2
+[2020-12-16T14:28:16.339+0000][1][gc,init] Periodic GC: Disabled
+[2020-12-16T14:28:16.340+0000][1][gc,cds ] Mark closed archive regions in map: [0x00000000fff00000, 0x00000000fff7bff8]
+[2020-12-16T14:28:16.342+0000][1][gc,cds ] Mark open archive regions in map: [0x00000000ffe00000, 0x00000000ffe51ff8]
+[2020-12-16T14:28:16.343+0000][1][gc,metaspace] CDS archive(s) mapped at: [0x0000000800000000-0x0000000800b2a000-0x0000000800b2a000), size 11706368, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+[2020-12-16T14:28:16.345+0000][1][gc,metaspace] Compressed class space mapped at: 0x0000000800b2c000-0x0000000840b2c000, size: 1073741824
+[2020-12-16T14:28:16.346+0000][1][gc,metaspace] Narrow klass base: 0x0000000800000000, Narrow klass shift: 3, Narrow klass range: 0x100000000
+[2020-12-16T14:28:18.143+0000][1][safepoint   ] Safepoint "ICBufferFull", Time since last: 1779324500 ns, Reaching safepoint: 5107600 ns, At safepoint: 26900 ns, Total: 5134500 ns
+[2020-12-16T14:28:18.544+0000][1][gc,start    ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2020-12-16T14:28:18.547+0000][1][gc,task     ] GC(0) Using 2 workers of 2 for evacuation
+[2020-12-16T14:28:18.548+0000][1][gc,age      ] GC(0) Desired survivor size 2097152 bytes, new threshold 15 (max threshold 15)
+[2020-12-16T14:28:18.563+0000][1][gc,age      ] GC(0) Age table with threshold 15 (max threshold 15)
+[2020-12-16T14:28:18.564+0000][1][gc,age      ] GC(0) - age   1:    3967096 bytes,    3967096 total
+[2020-12-16T14:28:18.565+0000][1][gc,phases   ] GC(0)   Pre Evacuate Collection Set: 0.2ms
+[2020-12-16T14:28:18.566+0000][1][gc,phases   ] GC(0)   Merge Heap Roots: 0.0ms
+[2020-12-16T14:28:18.568+0000][1][gc,phases   ] GC(0)   Evacuate Collection Set: 12.2ms
+[2020-12-16T14:28:18.569+0000][1][gc,phases   ] GC(0)   Post Evacuate Collection Set: 1.4ms
+[2020-12-16T14:28:18.570+0000][1][gc,phases   ] GC(0)   Other: 7.4ms
+[2020-12-16T14:28:18.571+0000][1][gc,heap     ] GC(0) Eden regions: 25->0(21)
+[2020-12-16T14:28:18.572+0000][1][gc,heap     ] GC(0) Survivor regions: 0->4(4)
+[2020-12-16T14:28:18.574+0000][1][gc,heap     ] GC(0) Old regions: 0->3
+[2020-12-16T14:28:18.575+0000][1][gc,heap     ] GC(0) Archive regions: 2->2
+[2020-12-16T14:28:18.576+0000][1][gc,heap     ] GC(0) Humongous regions: 1->1
+[2020-12-16T14:28:18.577+0000][1][gc,metaspace] GC(0) Metaspace: 7739K(8576K)->7739K(8576K) NonClass: 6911K(7680K)->6911K(7680K) Class: 828K(896K)->828K(896K)
+[2020-12-16T14:28:18.579+0000][1][gc          ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 26M->8M(512M) 34.974ms
+[2020-12-16T14:28:18.580+0000][1][gc,cpu      ] GC(0) User=0.02s Sys=0.01s Real=0.03s
+[2020-12-16T14:28:18.582+0000][1][safepoint   ] Safepoint "G1CollectForAllocation", Time since last: 400761200 ns, Reaching safepoint: 324800 ns, At safepoint: 37990700 ns, Total: 38315500 ns
+[2020-12-16T14:28:19.910+0000][1][safepoint   ] Safepoint "Cleanup", Time since last: 1327883800 ns, Reaching safepoint: 210100 ns, At safepoint: 3300 ns, Total: 213400 ns
+[2020-12-16T14:28:20.298+0000][1][gc,start    ] GC(1) Pause Young (Normal) (G1 Evacuation Pause)
+[2020-12-16T14:28:20.299+0000][1][gc,task     ] GC(1) Using 2 workers of 2 for evacuation
+[2020-12-16T14:28:20.300+0000][1][gc,age      ] GC(1) Desired survivor size 2097152 bytes, new threshold 1 (max threshold 15)
+[2020-12-16T14:28:20.334+0000][1][gc,age      ] GC(1) Age table with threshold 1 (max threshold 15)
+[2020-12-16T14:28:20.337+0000][1][gc,age      ] GC(1) - age   1:    2675392 bytes,    2675392 total
+[2020-12-16T14:28:20.342+0000][1][gc,phases   ] GC(1)   Pre Evacuate Collection Set: 0.3ms
+[2020-12-16T14:28:20.344+0000][1][gc,phases   ] GC(1)   Merge Heap Roots: 0.1ms
+[2020-12-16T14:28:20.346+0000][1][gc,phases   ] GC(1)   Evacuate Collection Set: 30.3ms
+[2020-12-16T14:28:20.347+0000][1][gc,phases   ] GC(1)   Post Evacuate Collection Set: 2.2ms
+[2020-12-16T14:28:20.348+0000][1][gc,phases   ] GC(1)   Other: 11.2ms
+[2020-12-16T14:28:20.349+0000][1][gc,heap     ] GC(1) Eden regions: 21->0(22)
+[2020-12-16T14:28:20.350+0000][1][gc,heap     ] GC(1) Survivor regions: 4->3(4)
+[2020-12-16T14:28:20.351+0000][1][gc,heap     ] GC(1) Old regions: 3->7
+[2020-12-16T14:28:20.353+0000][1][gc,heap     ] GC(1) Archive regions: 2->2
+[2020-12-16T14:28:20.354+0000][1][gc,heap     ] GC(1) Humongous regions: 1->1
+[2020-12-16T14:28:20.355+0000][1][gc,metaspace] GC(1) Metaspace: 12492K(12928K)->12492K(12928K) NonClass: 11032K(11264K)->11032K(11264K) Class: 1459K(1664K)->1459K(1664K)
+[2020-12-16T14:28:20.357+0000][1][gc          ] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 29M->11M(512M) 59.500ms
+[2020-12-16T14:28:20.358+0000][1][gc,cpu      ] GC(1) User=0.03s Sys=0.01s Real=0.06s
+[2020-12-16T14:28:20.363+0000][1][safepoint   ] Safepoint "G1CollectForAllocation", Time since last: 387427000 ns, Reaching safepoint: 129200 ns, At safepoint: 65094100 ns, Total: 65223300 ns
+[2020-12-16T14:28:20.921+0000][1][gc,start    ] GC(2) Pause Young (Normal) (G1 Evacuation Pause)
+[2020-12-16T14:28:20.925+0000][1][gc,task     ] GC(2) Using 2 workers of 2 for evacuation
+[2020-12-16T14:28:20.927+0000][1][gc,age      ] GC(2) Desired survivor size 2097152 bytes, new threshold 1 (max threshold 15)
+[2020-12-16T14:28:20.948+0000][1][gc,age      ] GC(2) Age table with threshold 1 (max threshold 15)
+[2020-12-16T14:28:20.949+0000][1][gc,age      ] GC(2) - age   1:     205640 bytes,     205640 total
+[2020-12-16T14:28:20.950+0000][1][gc,phases   ] GC(2)   Pre Evacuate Collection Set: 0.3ms
+[2020-12-16T14:28:20.951+0000][1][gc,phases   ] GC(2)   Merge Heap Roots: 0.1ms
+[2020-12-16T14:28:20.952+0000][1][gc,phases   ] GC(2)   Evacuate Collection Set: 18.0ms
+[2020-12-16T14:28:20.954+0000][1][gc,phases   ] GC(2)   Post Evacuate Collection Set: 1.3ms
+[2020-12-16T14:28:20.955+0000][1][gc,phases   ] GC(2)   Other: 9.6ms
+[2020-12-16T14:28:20.957+0000][1][gc,heap     ] GC(2) Eden regions: 22->0(38)
+[2020-12-16T14:28:20.959+0000][1][gc,heap     ] GC(2) Survivor regions: 3->1(4)
+[2020-12-16T14:28:20.960+0000][1][gc,heap     ] GC(2) Old regions: 7->9
+[2020-12-16T14:28:20.961+0000][1][gc,heap     ] GC(2) Archive regions: 2->2
+[2020-12-16T14:28:20.962+0000][1][gc,heap     ] GC(2) Humongous regions: 1->1
+[2020-12-16T14:28:20.964+0000][1][gc,metaspace] GC(2) Metaspace: 13751K(14336K)->13751K(14336K) NonClass: 12151K(12544K)->12151K(12544K) Class: 1600K(1792K)->1600K(1792K)
+[2020-12-16T14:28:20.965+0000][1][gc          ] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 33M->10M(512M) 44.268ms
+[2020-12-16T14:28:20.966+0000][1][gc,cpu      ] GC(2) User=0.02s Sys=0.01s Real=0.05s
+[2020-12-16T14:28:20.968+0000][1][safepoint   ] Safepoint "G1CollectForAllocation", Time since last: 557864700 ns, Reaching safepoint: 210200 ns, At safepoint: 46890200 ns, Total: 47100400 ns
+[2020-12-16T14:28:21.271+0000][1][gc,heap,exit] Heap
+[2020-12-16T14:28:21.279+0000][1][gc,heap,exit]  garbage-first heap   total 524288K, used 11900K [0x00000000e0000000, 0x0000000100000000)
+[2020-12-16T14:28:21.281+0000][1][gc,heap,exit]   region size 1024K, 3 young (3072K), 1 survivors (1024K)
+[2020-12-16T14:28:21.287+0000][1][gc,heap,exit]  Metaspace       used 13783K, capacity 14080K, committed 14336K, reserved 1062912K
+[2020-12-16T14:28:21.289+0000][1][gc,heap,exit]   class space    used 1604K, capacity 1693K, committed 1792K, reserved 1048576K
